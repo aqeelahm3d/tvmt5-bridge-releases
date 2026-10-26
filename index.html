@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TradingView MT5 Bridge</title>
+  <meta name="description" content="Place and manage MetaTrader 5 trades from your TradingView chart, using a small app that runs only on your own Windows PC.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>TradingView MT5 Bridge</h1>
+    <p>Trade your MetaTrader 5 accounts straight from your TradingView chart. Everything runs on your own Windows PC.</p>
+  </header>
+
+  <section class="card">
+    <h2 style="margin-top:0">1. Download the Bridge app</h2>
+    <p>The Chrome extension needs this small Windows app to talk to MetaTrader 5.</p>
+    <!-- Replace the link below with the installer on GitHub Releases. -->
+    <p><a class="button" href="https://github.com/aqeelahm3d/tvmt5-bridge-releases/releases/latest">Download for Windows</a></p>
+    <p>Requires Windows 10 or 11 (64-bit), MetaTrader 5 and Google Chrome.</p>
+  </section>
+
+  <h2>2. Install</h2>
+  <ol>
+    <li>Run <code>TradingViewMT5Bridge_Setup.exe</code>.</li>
+    <li>Windows may show <strong>"Windows protected your PC"</strong> because this is a new app. Click <strong>More info</strong>, then <strong>Run anyway</strong>.</li>
+    <li>Finish the installer. The Bridge starts by itself and shows an icon near the clock.</li>
+  </ol>
+
+  <h2>3. Add the Chrome extension</h2>
+  <ol>
+    <li>Open the extension's Chrome Web Store page from the invite link you received and click <strong>Add to Chrome</strong>.</li>
+    <li>Open a chart on <a href="https://www.tradingview.com/chart/">tradingview.com</a>. The panel appears on the right and pairs with the Bridge automatically.</li>
+  </ol>
+
+  <h2>4. Connect your MT5 account</h2>
+  <ol>
+    <li>Open each MetaTrader 5 terminal you want to use and log in once.</li>
+    <li>In MT5, click <strong>Algo Trading</strong> on the toolbar so it turns green, and tick <strong>Tools &gt; Options &gt; Expert Advisors &gt; Allow algorithmic trading</strong>.</li>
+    <li>In the panel, open <strong>Accounts &gt; Add account</strong>, enter the full path to that terminal's <code>terminal64.exe</code> (for example <code>C:\Program Files\MetaTrader 5\terminal64.exe</code>), your login, server and password, then <strong>Test connection</strong> and <strong>Add account</strong>.</li>
+  </ol>
+
+  <div class="note">
+    <strong>Start on a demo account.</strong> Real (live) accounts are blocked until you switch on <strong>Allow live</strong> for that account yourself.
+  </div>
+
+  <h2>Your data stays on your PC</h2>
+  <ul>
+    <li>Your MT5 password is typed in a protected box, sent only to the Bridge on your own PC, and saved there with Windows encryption.</li>
+    <li>The Bridge only accepts connections from your own computer and does not send anything to us or to any other server.</li>
+    <li>Read the full <a href="privacy.html">privacy policy</a>.</li>
+  </ul>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li><strong>Panel says "Bridge offline":</strong> start "TradingView MT5 Bridge" from the Start menu, then click <strong>Retry now</strong>.</li>
+    <li><strong>"AutoTrading disabled by client":</strong> turn on Algo Trading in that MT5 terminal (step 4.2).</li>
+    <li><strong>"MT5 terminal not found":</strong> edit the account and enter the correct <code>terminal64.exe</code> path.</li>
+  </ul>
+
+  <footer>
+    Trading involves risk. This tool places the orders you ask for; it does not give trading advice.
+    Questions or feedback: <a href="mailto:tvmt5.support@gmail.com">tvmt5.support@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

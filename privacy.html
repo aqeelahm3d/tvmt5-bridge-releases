@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>TradingView MT5 Bridge (Chrome extension and Windows app). Last updated: 26 October 2026.</p>
+  </header>
+
+  <h2>Summary</h2>
+  <p>We do not collect, receive, store or sell any of your data. The extension and the Bridge app work only on your own computer.</p>
+
+  <h2>What the software handles, and where it stays</h2>
+  <ul>
+    <li><strong>MetaTrader 5 login details</strong> (terminal path, login number, server, password): sent from the extension only to the Bridge app on your own PC (address <code>127.0.0.1</code>). The password is saved on your PC with Windows encryption (DPAPI), so only your Windows user account can read it. It is never sent back to the browser.</li>
+    <li><strong>Trading data</strong> (prices, positions, orders, balances): read from your MT5 terminals by the Bridge and shown in the panel. It is not sent anywhere else.</li>
+    <li><strong>Panel settings</strong> (lot sizes, account groups, layout, theme): saved in the extension's own Chrome storage on your computer.</li>
+    <li><strong>Pairing token</strong>: a random key the extension and the Bridge use to recognise each other, stored on your computer.</li>
+  </ul>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No analytics, tracking, advertising or telemetry.</li>
+    <li>No accounts on our side and no servers that receive your data.</li>
+    <li>No selling or sharing of data with anyone.</li>
+  </ul>
+
+  <h2>Website access</h2>
+  <p>The extension runs only on <code>tradingview.com</code> chart pages, to show the trading panel and read the chart's symbol and price levels. It connects only to the Bridge app at <code>127.0.0.1:8765</code> on your computer.</p>
+
+  <h2>Third parties</h2>
+  <p>Your trades are sent by your own MetaTrader 5 terminal to your broker, under your broker's terms and privacy policy. TradingView's own terms apply to your use of tradingview.com.</p>
+
+  <h2>Removing your data</h2>
+  <p>Remove an account in the panel to delete its saved password. Removing the extension deletes the panel settings. Uninstalling the Bridge app keeps its saved accounts in <code>%LOCALAPPDATA%\TradingViewMT5Bridge</code> so a reinstall keeps working; delete that folder to remove them completely.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:tvmt5.support@gmail.com">tvmt5.support@gmail.com</a></p>
+
+  <p><a href="index.html">Back to setup guide</a></p>
+</main>
+</body>
+</html>
