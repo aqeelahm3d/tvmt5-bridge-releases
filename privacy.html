@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1>Privacy Policy</h1>
-    <p>TradingView MT5 Bridge (Chrome extension and Windows app). Last updated: 26 October 2026.</p>
+    <p>TVMT5 Bridge (Chrome extension and Windows app). Last updated: 28 October 2026.</p>
   </header>
 
   <h2>Summary</h2>
@@ -20,7 +20,9 @@
   <ul>
     <li><strong>MetaTrader 5 login details</strong> (terminal path, login number, server, password): sent from the extension only to the Bridge app on your own PC (address <code>127.0.0.1</code>). The password is saved on your PC with Windows encryption (DPAPI), so only your Windows user account can read it. It is never sent back to the browser.</li>
     <li><strong>Trading data</strong> (prices, positions, orders, balances): read from your MT5 terminals by the Bridge and shown in the panel. It is not sent anywhere else.</li>
-    <li><strong>Panel settings</strong> (lot sizes, account groups, layout, theme): saved in the extension's own Chrome storage on your computer.</li>
+    <li><strong>Trading settings</strong> (lot sizes, account groups, selected accounts and other panel settings): saved in the extension's storage and backed up by the Bridge app on your own PC.</li>
+    <li><strong>Look-and-feel settings</strong> (theme, panel size, design, position, hide-balance switch): saved in Chrome. If you are signed in to Chrome with sync turned on, Chrome syncs these through your Google account so they follow you to your other computers. No trading data, account details or passwords are synced.</li>
+    <li><strong>Trade journal</strong>: built on demand from your own MT5 history by the Bridge on your PC. Nothing is stored or sent elsewhere; a CSV export is saved only where you choose.</li>
     <li><strong>Pairing token</strong>: a random key the extension and the Bridge use to recognise each other, stored on your computer.</li>
   </ul>
 
@@ -43,7 +45,7 @@
   <h2>Contact</h2>
   <p><a href="mailto:tvmt5.support@gmail.com">tvmt5.support@gmail.com</a></p>
 
-  <p><a href="index.html">Back to setup guide</a></p>
+  <p><a href="index.html">Back to setup guide</a> · <a href="terms.html">Terms of use</a></p>
 </main>
 </body>
 </html>
